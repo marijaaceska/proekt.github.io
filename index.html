@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prilep</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+</head>
+<body>
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <a href="#" class="logo"><span>P</span>rilep</a>
+
+    <nav class="navbar">
+        <a href="#home">Почетна</a>
+        <a href="#gallery">Галерија</a>
+        <a href="#events">Настани</a>
+        <a href="#hotel">Сместување</a>
+        <a href="#food">Кафе и храна</a>
+        <a href="#things">Интересно</a>
+    </nav>
+<!--
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="пребарај">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+-->
+</header>
+<!--
+<div class="login-form-container">
+
+    <i class="fas fa-time" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email">
+        <input type="password" class="box" placeholder="enter your password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>Forget password? <a href="#">click here</a></p>
+        <p>Don't have an account? <a href="#">Register now</a></p>
+    </form>
+
+</div>
+-->
+<!--home section -->
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Град каде мирисот на тутун опива, а вкусот на скара освојува</h3>
+        <div class="read-more">
+
+            <p>
+                Потеклото за името на  градот Прилеп е навистина прекрасно предание кое го пренел Марко
+                Цепенков. Луѓето како што почнале да се доселуваат во градот и ги граделе своите куќи така
+                што ги прилепувале до калето на Крали Марко, па поради прилепените куќи, градот го добил името
+                Прилеп. Според Блаже Конески името на градот било образувано од личните имиња Прилепа и Прилепка,
+                сочувани од руската антропономија.
+
+            </p>
+        </div>
+        <button class="btn">Прочитај повеќе</button>
+    </div>
+
+
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="videos/vid1.mp4"></span>
+        <span class="vid-btn" data-src="videos/vid2.mp4"></span>
+        <span class="vid-btn" data-src="videos/vid4.mp4"></span>
+        <span class="vid-btn" data-src="videos/vid5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="videos/vid1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+
+</section>
+
+<!--places to visit -->
+
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>Г</span>
+        <span>А</span>
+        <span>Л</span>
+        <span>Е</span>
+        <span>Р</span>
+        <span>И</span>
+        <span>Ј</span>
+        <span>А</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/photo1.jpg">
+            <div class="content">
+                <h3>Манастир Трескавец</h3>
+                <div class="read-more">
+                    <p>
+                        Манастирот Трескавец се наоѓа на 10 километри од градот Прилеп, на надморска височина
+                        од 1280 метри. Издигнат е високо над карпите каде може да се ужива во прекрасна глетка
+                        на околните планини и убавини на природата. Манастирот до пред 10тина години претставуваше
+                        доста скриено и непристапно светилиште во Македонија, каде единствен начин за посета беше
+                        пешачење по тесна и непристапна патека каде можат да се видат многу карпи изразбарени во
+                        некои облици, меѓу кои една од најубавите резби е резбата на Богородица. Убавините на самиот
+                        манастир и големата посетеност од туристи го направија еден од најубавите манастири од Македонија.
+                        Најпосетен е манастирот на празниците Мала и Голема Богородица поради и самото име на манастирската
+                        црква - Успение на Пресвета Богородица.
+                    </p>
+                        <div class="grid-wrapper">
+                            <div>
+                                <img src="images/t1.jpg">
+                            </div>
+                            <div>
+                                <img src="images/t2.jpg">
+                            </div>
+
+                        </div>
+                </div>
+                <button class="btn">Прочитај повеќе</button>
+                <br>
+
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="images/photo2.jpg">
+            <div class="content">
+                <h3>Мермерно езеро</h3>
+                <div class="read-more">
+                    <p>
+                        Во близина на градот се наоѓа Мермерното езеро каде се вршело ископ на мермер, каде при процесот на
+                        ископување се појавил извор на природна вода која го запрела процесот. Мермерниот монумент се наоѓа
+                        на западната страна од планината така што при залезот на сонцето мермерот добива интензивна бела боја.
+                        Формите на парчињата мермер се совршени коцки кои создаваат фасцинантна композиција. Монументноста и
+                        доминантноста создава чувство како да сте на друга планета. Водата има совршено смарагдна боја, а во
+                        длабочината можат да се забележат останати засеци мермер. Мермерното езеро е предел каде природата и
+                        вели стоп на човечката рака. Мирисот на мермер е пријатен и смирувачки.
+
+                    </p>
+                    <div class="grid-wrapper">
+                        <div>
+                            <img src="images/m1.jpg">
+                        </div>
+                        <div>
+                            <img src="images/m2.jpg">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Прочитај повеќе</button>
+                <br>
+
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="images/photo3.jpg">
+            <div class="content">
+                <h3>Могила на непобедените</h3>
+                <div class="read-more">
+                    <p>
+                        Могилата на Непобедените позната е уште и како Парк на револуцијата, изграден во 1961 година во
+                        чест на загинатите борци од НОВ. Автор на проектот бил белградскиот архитект Богдан Богдановиќ.
+                        Меморијалниот комплекс е составен од два дела: Заедничка гробница-крипта и спомен урни. Најголема урна
+                        со симбол вечен пламен ја претставува непокорноста на македонскиот народ. Кај заедничката гробница во
+                        мермерните плочи се испишани имињата на паднатите борци, кои го положиле животот за Македонија. Овој
+                        парк ја симболизира победата на слободата над ропството.
+
+                    </p>
+                    <div class="grid-wrapper">
+
+                        <div>
+                            <img src="images/mogila2.jpg">
+                        </div>
+                        <div>
+                            <img src="images/mogila3.jpg">
+                        </div>
+
+                    </div>
+                </div>
+                <button class="btn">Прочитај повеќе</button>
+                <br>
+
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="images/photo4.jpg">
+            <div class="content">
+                <h3>Варош</h3>
+                <div class="read-more">
+                    <p>
+                        Марков град или Варош претставува најстарата населба во Прилеп. Со помош на спојување оваа населба е прилепена со
+                        градот Прилеп така што денес Варош претставува негова населба. Се наоѓа северозападно од градот во подножјето на
+                        Маркови Кули. За Варош пишувале постарите автори како што и е прилепскиот Марко Цепенков кој пренел:
+                        „Се велит од старите оти во Варош имало во старо време 77 цркви; сите со зулум биле праени и затоа само неколку има здрави:
+                        Св. Димитрија, Св. Никола, Св. Петар и Св. Пречиста.“
+                        Големиот број цркви говори за големиот број жители кои живееле во тој период, но и за богатството со кое располагале.
+                        Со застапеноста на  голем број цркви може да се заклучи дека била развиена и христијанската култура и просветителството
+                        на населбата и самиот град.
+                    </p>
+                    <div class="grid-wrapper">
+                        <div>
+                            <img src="images/v1.jpg">
+                        </div>
+                        <div>
+                            <img src="images/v2.jpg">
+                        </div>
+
+                    </div>
+                </div>
+                <button class="btn">Прочитај повеќе</button>
+                <br>
+
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="images/photo5.jpg">
+            <div class="content">
+                <h3>Плоштад</h3>
+                <div class="read-more">
+                    <p>
+                        Плоштадот во Прилеп изобилува со голем број на споменици од познати јунаци на македонската историја како што се Марко Крале, Александар Македонски и други. Препознатлив белег на прилепскиот плоштад е градскиот саат.
+                        Големиот број на улици и нивните креативни имиња го красат градот.
+                    </p>
+                    <div class="grid-wrapper">
+
+                        <div>
+                            <img src="images/pr2.jpg">
+                        </div>
+                        <div>
+                            <img src="images/pr4.jpg">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Прочитај повеќе</button>
+                <br>
+
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="images/photo6.jpg">
+            <div class="content">
+                <h3>Стара чаршија</h3>
+                <div class="read-more">
+                    <p>
+                        Чаршијата во Прилеп се развила со самото создавање на градот, во тоа време наречена Прилепски пазар каде
+                        луѓето вршеле трговија на стока и прехранбени производи. По формирањето на пазарот почнале да се отвораат
+                        бакалџилници и занаетчиски дуќани. Старата прилепска чаршија својот најголем подем го имала во втората половина
+                        на 18 и почетокот на 19 век кога во тој период Прилеп бил  многу развиен трговски и занаетчиски град. Дуќаните
+                        во старата чаршија биле направени со посебен стил и шарм. Со развојот на градот и големата урбанизација старата
+                        чаршија е изменета, но духот и шармот на старите занаетчии и понатаму го красат градот.
+
+                    </p>
+                    <div class="grid-wrapper">
+                        <div>
+                            <img src="images/st1.jpg">
+                        </div>
+                        <div>
+                            <img src="images/st2.jpg">
+                        </div>
+
+                    </div>
+                </div>
+                <button class="btn">Прочитај повеќе</button>
+                <br>
+
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="images/photo16.jpg">
+            <div class="content">
+                <h3>Музеј на тутун</h3>
+                <div class="read-more">
+                    <p>
+                        Музејот на тутун во Прилеп е единствениот музеј од таков вид на Балканот, а претставува и еден од поголемите
+                        тутунски музеи низ цела Европа. Основан е во 1973 година од страна на д-р Бошко Бабиќ. Музејот поседува ретки
+                        и скапи експонати, кои припаѓале на познати сопственици(кралеви, принцови, војводи, војсководци и познати личности
+                        од историјата) или експонати кои говорат за развојот на навиките за пушење на тутунот. Во својата колекција
+                        ексклузивни лулиња присутни се лулиња кои биле дел од големи светски изложби во Париз и Виена. Многубројните
+                        експонати во музејот имаат улога да го објаснат човекот преку луксузот(тутунот е луксуз и феномен на апсурдот).
+                        Покрај големиот број експонати музејот ги собира и приказните кои одат заедно со нив.
+
+                    </p>
+                    <div class="grid-wrapper">
+
+                        <div>
+                            <img src="images/muzej2.jpg">
+                        </div>
+                        <div>
+                            <img src="images/muzej3.jpg">
+                        </div>
+
+                    </div>
+                </div>
+                <button class="btn">Прочитај повеќе</button>
+                <br>
+
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="images/photo8.jpg">
+            <div class="content">
+                <h3>Вештачко езеро</h3>
+                <div class="read-more">
+                    <p>
+                        Прилепското Езеро е вештачка акумулација, лоцирана во местото Горно Поле во долината на Ореовечката Река, 4 km
+                        североисточно од градот. Прилепското Езеро е мало, но доста атрактивно, а со доуредување лесно може да стане
+                        посетен туристички локалитет. Природата која ја нуди езерото служи и за спортско – рекреативни цели како и
+                        излетнички локалитет, а со своето амбиентално опкружување нуди можности за велосипедизам, натпревари во спортска
+                        ориентација, организирање на излети, кајак на мирни води, како и натпревари во спортски риболов. Освен самата
+                        околина, езерото е значајно по тоа што располага со повеќе видови на риби од кои најзастапени се клен, скобал,
+                        крап и костреш. Затоа, најчести посетители на езерото се токму рибарите.
+
+                    </p>
+                    <div class="grid-wrapper">
+                        <div>
+                            <img src="images/ezero1.jpg">
+                        </div>
+
+                        <div>
+                            <img src="images/ezero3.jpg">
+                        </div>
+
+                    </div>
+                </div>
+                <button class="btn">Прочитај повеќе</button>
+                <br>
+
+            </div>
+        </div>
+
+
+        <div class="box">
+            <img src="images/ucastak1.jpg">
+            <div class="content">
+                <h3>Участакот</h3>
+                <div class="read-more">
+                    <p>
+                        Во 1948 година во рамките на Народно-ослободителниот одбор на општина Прилеп е формирана првата музејска збирка на
+                        документи, фотографии и уметнички слики од прилепски автори со тематика од НОБ. Во старата зграда на участокот продолжува
+                        да функционира Музејот на НОБ, кој во следниот период претрпува повеќе измени во својата содржина.
+                        Во музејот се изложени бројни документи, скици, карти, оружје и воена опрема, а посебен простор е оставен за учесниците,
+                        кои го започнаа вооруженото востание на 11 октомври.На долниот кат се наоѓа просторијата која ја отсликува истражната
+                        постапка, што се вршела во тогашниот затвор, а е поставена и макета на участокот, онака како што тој изгледал во
+                        1941 година.
+
+                    </p>
+                    <div class="grid-wrapper">
+                        <div>
+                            <img src="images/ucastak2.jpg">
+                        </div>
+                        <div>
+                            <img src="images/ucastak3.jpg">
+                        </div>
+
+                    </div>
+                </div>
+                <button class="btn">Прочитај повеќе</button>
+                <br>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<br>
+<br>
+
+<!-- events -->
+<section class="events" id="events">
+
+    <h1 class="heading">
+        <span>Н</span>
+        <span>А</span>
+        <span>С</span>
+        <span>Т</span>
+        <span>А</span>
+        <span>Н</span>
+        <span>И</span>
+    </h1>
+
+    <div class="boxContainer">
+
+        <div class="box">
+            <i class="fas fa-beer"></i>
+            <h3>Пивофест</h3>
+            <p>
+                Љубителите на ладното пиво, вкусно подготвената скара и забавната музика секоја година нестрпливо го чекаат летото за
+                да го минат викендот во центарот на градот Прилеп. Големиот избор на пиво, веселата
+                атмосфера и пријателски расположените илјадници посетители придонесуваат за овој фестивал да биде еден од најпосетени од отворен тип.
+            </p>
+
+            <div class="read-more">
+                <div class="grid-wrapper">
+                    <div>
+                        <img src="images/pivofest1.jpg">
+                    </div>
+                    <div>
+                        <img src="images/pivofest2.jpg">
+                    </div>
+
+                    <div>
+                        <img src="images/pivofest4.jpg">
+                    </div>
+                    <div>
+                        <img src="images/pivofest5.jpg">
+                    </div>
+
+
+                </div>
+
+            </div>
+            <button class="far fa-images"></button>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-mask"></i>
+            <h3>Прочка</h3>
+            <p>
+                Kултурната манифестација „Прилепски карневал“ се одржува секоја година во градот домаќин Прилеп,
+                каде има повеќе од 300 држави гости од цела Европа. Низ центарот на градот дефилираат над 1000 групни и
+                поединечни маски, а за најубавите следуваат награди.
+
+            </p>
+
+            <div class="read-more">
+                <div class="grid-wrapper">
+                    <div>
+                        <img src="images/procka1.jpg">
+                    </div>
+                    <div>
+                        <img src="images/procka2.jpg">
+                    </div>
+                    <div>
+                        <img src="images/procka3.jpg">
+                    </div>
+                    <div>
+                        <img src="images/procka5.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+            <button class="far fa-images"></button>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-theater-masks"></i>
+            <h3>Театарски игри</h3>
+            <p>
+                Фестивалот го носи името на основоположникот на македонската драма — Војдан Чернодрински. Традиционално, фестивалот се одржува секоја година во градот Прилеп во почетокот на јуни.
+                Фестивалот има натпреварувачки карактер и на него се доделуваат награди „Војдан Чернодрински“ во повеќе категории.
+            </p>
+
+            <div class="read-more">
+                <div class="grid-wrapper">
+                    <div>
+                        <img src="images/teatar1.jpg">
+                    </div>
+                    <div>
+                        <img src="images/teatar3.jpg">
+                    </div>
+                    <div>
+                        <img src="images/teatar5.jpg">
+                    </div>
+                    <div>
+                        <img src="images/teatar6.jpg">
+                    </div>
+
+                </div>
+            </div>
+            <button class="far fa-images"></button>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-guitar"></i>
+            <h3>Jazz Festival</h3>
+            <p>
+                Вљубениците на модерната џез музика, со желба за збогатување на музичкиот живот на градот, иницираа
+                манифестација, која ја нарекоа Prilep Jazz Festival. Фестивалот се одржува последниот викенд на месец
+                август на летната сцена на ЦК “Марко Цепенков”. Нуди одлична програма која ветува незаборавно искуство
+                за сите љубители на добра музика.
+
+            </p>
+
+            <div class="read-more">
+                <div class="grid-wrapper">
+                    <div>
+                        <img src="images/jazz.jpg">
+                    </div>
+                    <div>
+                        <img src="images/jazz2.jpg">
+                    </div>
+                    <div>
+                        <img src="images/jazz3.jpg">
+                    </div>
+                    <div>
+                        <img src="images/jazz4.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="far fa-images"></button>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-palette"></i>
+            <h3>Денови на Крале Марко</h3>
+            <p>
+                Деновите на Крали Марко се одржуваат во периодот од 15 до 17 мај  со што се одбележува годишнината од
+                загинувањето на Крали Марко. Се промовира градот Прилеп каде живеел легендарниот крал. Манифестацијата
+                се одржува во подножјето на Маркови Кули и опфаќа изложби, класична музика, цртање, раскажување приказни
+                и легенди.
+
+            </p>
+
+            <div class="read-more">
+                <div class="grid-wrapper">
+                    <div>
+                        <img src="images/marko1.jpg">
+                    </div>
+                    <div>
+                        <img src="images/marko2.jpg">
+                    </div>
+                    <div>
+                        <img src="images/marko3.jpg">
+                    </div>
+                    <div>
+                        <img src="images/marko4.jpg">
+                    </div>
+
+
+                </div>
+
+            </div>
+            <button class="far fa-images"></button>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-drum"></i>
+            <h3>Фестивал на народни инструменти "Пеце Атанасовски"</h3>
+            <p>
+                Околу 300 изведувачи од народниот мелос во центарот на градот ја продолжуваат традицијата во негување и
+                зачувување на богатиот изворен фолклор на овој фестивал. Одекнуваат гајдата, кавалот, зурлите, тапаните.
+                Фестивалот ги наградува најдобрите изведувачи со Гран при.
+
+            </p>
+
+            <div class="read-more">
+                <div class="grid-wrapper">
+                    <div>
+                        <img src="images/inst1.jpg">
+                    </div>
+                    <div>
+                        <img src="images/inst2.jpg">
+                    </div>
+                    <div>
+                        <img src="images/inst3.jpg">
+                    </div>
+                    <div>
+                        <img src="images/inst4.jpg">
+                    </div>
+                    <div>
+                        <img src="images/inst5.jpg">
+                    </div>
+                    <div>
+                        <img src="images/inst6.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+            <button class="far fa-images"></button>
+        </div>
+
+
+    </div>
+
+</section>
+
+<!--ends events-->
+
+<!-- hotels -->
+
+
+
+
+<section class="hotel" id="hotel">
+
+    <h1 class="heading">
+        <span>С</span>
+        <span>М</span>
+        <span>Е</span>
+        <span>С</span>
+        <span>Т</span>
+        <span>У</span>
+        <span>В</span>
+        <span>А</span>
+        <span>Њ</span>
+        <span>Е</span>
+    </h1>
+
+    <div class="box-cont">
+
+        <div class="box">
+            <img src="images/photo11.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Хотел Салида </h3>
+                <p>Лоциран во јужниот дел на градот Прилеп.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <br>
+                <div class="read-more">
+                    <div class="grid-wrapper">
+                        <div>
+                            <img src="images/sal1.jpg">
+                        </div>
+                        <div>
+                            <img src="images/sal2.jpg">
+                        </div>
+                        <div>
+                            <img src="images/sal3.jpg">
+                        </div>
+                        <div>
+                            <img src="images/sal4.jpg">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Галерија</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/photo12.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Хотел Кристал Палас </h3>
+                <p>Лоциран во близина на центарот на градот.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <br>
+                <div class="read-more">
+                    <div class="grid-wrapper">
+                        <div>
+                            <img src="images/kristalpalas1.jpg">
+                        </div>
+                        <div>
+                            <img src="images/kristalpalas2.jpg">
+                        </div>
+                        <div>
+                            <img src="images/kristalpalas3.jpg">
+                        </div>
+                        <div>
+                            <img src="images/kristalpalas4.jpg">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Галерија</button>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/photo13.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Хотел Атлас </h3>
+                <p>Лоциран во центарот на градот.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <br>
+                <div class="read-more">
+                    <div class="grid-wrapper">
+                        <div>
+                            <img src="images/atlas1.jpg">
+                        </div>
+                        <div>
+                            <img src="images/atlas2.jpg">
+                        </div>
+                        <div>
+                            <img src="images/atlas3.jpeg">
+                        </div>
+                        <div>
+                            <img src="images/atlas4.jpg">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn">Галерија</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ends hotels -->
+
+<!-- restorani -->
+
+
+
+
+<section class="food" id="food">
+
+    <h1 class="heading">
+        <span>К</span>
+        <span>А</span>
+        <span>Ф</span>
+        <span>Е</span>
+    </h1>
+<br>
+
+    <div class="food-container">
+
+                <div class="box">
+                    <img src="images/art.jpg" alt="">
+                    <h3>Art cafe</h3>
+                    <i class="fas fa-mug-hot"></i>
+                </div>
+
+
+                <div class="box">
+                    <img src="images/trotoar.jpg" alt="">
+                    <h3>Trotoar</h3>
+                        <i class="fas fa-mug-hot"></i>
+                </div>
+
+
+                <div class="box">
+                    <img src="images/kaffeine.jpg" alt="">
+                    <h3>Kaffeine</h3>
+                        <i class="fas fa-mug-hot"></i>
+                </div>
+
+
+                <div class="box">
+                    <img src="images/onyx3.jpg" alt="">
+                    <h3>Onyx cafe</h3>
+                    <i class="fas fa-mug-hot"></i>
+                </div>
+
+        <div class="box">
+            <img src="images/pulse.jpg" alt="">
+            <h3>Pulse</h3>
+            <i class="fas fa-mug-hot"></i>
+        </div>
+
+        <div class="box">
+            <img src="images/hive.jpg" alt="">
+            <h3>Hive</h3>
+            <i class="fas fa-mug-hot"></i>
+        </div>
+
+        <div class="box">
+            <img src="images/baza.jpg" alt="">
+            <h3>Baza</h3>
+            <i class="fas fa-mug-hot"></i>
+        </div>
+
+    </div>
+
+    <br>
+    <h1 class="heading">
+        <span>Х</span>
+        <span>Р</span>
+        <span>А</span>
+        <span>Н</span>
+        <span>А</span>
+    </h1>
+
+    <div class="food-container">
+
+        <div class="box">
+            <img src="images/monarca.jpg" alt="">
+            <h3>Monarca</h3>
+            <i class="fas fa-utensils"></i>
+        </div>
+
+
+        <div class="box">
+            <img src="images/lastrada2.jpg" alt="">
+            <h3>La Strada</h3>
+            <i class="fas fa-utensils"></i>
+        </div>
+
+
+        <div class="box">
+            <img src="images/lapiazza2.jpg" alt="">
+            <h3>La Piazza</h3>
+            <i class="fas fa-utensils"></i>
+        </div>
+
+
+        <div class="box">
+            <img src="images/academy.jpg" alt="">
+            <h3>Academy</h3>
+            <i class="fas fa-utensils"></i>
+        </div>
+
+        <div class="box">
+            <img src="images/kino.jpg" alt="">
+            <h3>Kino</h3>
+            <i class="fas fa-utensils"></i>
+        </div>
+
+        <div class="box">
+            <img src="images/leone.jpg" alt="">
+            <h3>Leone</h3>
+            <i class="fas fa-utensils"></i>
+        </div>
+
+        <div class="box">
+            <img src="images/bianco.jpg" alt="">
+            <h3>Bianco</h3>
+            <i class="fas fa-utensils"></i>
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+<!-- restorani ends -->
+
+<!-- facts -->
+<section class="things" id="things">
+    <h1 class="heading">
+        <span>И</span>
+        <span>Н</span>
+        <span>Т</span>
+        <span>Е</span>
+        <span>Р</span>
+        <span>Е</span>
+        <span>С</span>
+        <span>Н</span>
+        <span>О</span>
+
+    </h1>
+
+    <div class="things-container">
+
+        <div class="box">
+            <img src="images/tutun.jpg">
+            <h3 class="title">Тутун</h3>
+            <div class="text">
+                <p>Тутунот е еден од прилепските традиционални култури што успева во македонската клима.
+                    Многу од големите светски производители на цигари го користат прилепскиот тутун.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/mermer.jpg">
+            <h3 class="title">Мермер</h3>
+            <div class="text">
+                <p>Белиот прилепски мермер останува како бренд кој се бара во целиот свет.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/iskacuvanje.jpg">
+            <h3 class="title">Искачување по карпи</h3>
+            <div class="text">
+                <p>Карпите претставуваат одлична можност за развивање алтернативни спортови, како можност за младите генерации да се насочат кон правилен раст и развој и да се посветат на здрав живот со натпреварувачки дух.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/markovi.jpg">
+            <h3 class="title">Маркови Кули</h3>
+            <div class="text">
+                <p>Марковите Кули со нивните безбројни камени формации се сведок на различни времиња и древни цивилизации. Оттука е и именувањето на карпите како живи суштества(слон, жаба, штрк, волк…).
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/st3.jpg">
+            <h3 class="title">Итар Пејо</h3>
+            <div class="text">
+                <p>Итар Пејо е претставник на мак. шегобијна мудрост, препознатлив во народните приказни,
+                кој потекнува од Мариово и се одликува со извонредна итрина и снаодливост.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/cigari.jpg">
+            <h3 class="title">Цигари Филтер</h3>
+            <div class="text">
+                <p>Цигари Филтер произведени во Тутунски Комбинат Прилеп.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/pivara.jpg">
+            <h3 class="title">Прилепска Пивара</h3>
+            <div class="text">
+                <p>Друштво кое е основано во 1924 година, заштитен знак им е
+                    висококвалитетното пиво, како Златен Даб и Крали Марко, едни од водечките домашни
+                    брендови на пиво, Tuborg и Carlsberg, едни од најквалитетните светски пива, чиј единствен овластен
+                    дистрибутер е Прилепска Пиварница.
+                </p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/pazar.jpg">
+            <h3 class="title">Пазарен ден</h3>
+            <div class="text">
+                <p>Еден пазарен ден во 90-тите години од минатиот век во прилепската чаршија. Како пазарни
+                денови во Прилеп се деновите среда и сабота.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/vitaminka.jpg">
+            <h3 class="title">Витаминка</h3>
+            <div class="text">
+                <p>Витаминка е претпријатие за прехрамбени производи, основана во 1956 год. во Прилеп. Првичната замисла им била производство на црвен мелен пипер. Денес Витаминка е водечко претпријатие во прехрамбената индустрија, со повеќе од 600 вработени.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <button id="load-more" class="btn">види повеќе</button>
+
+
+</section>
+
+<!-- read more popup -->
+
+<div class="popup-box">
+    <div class="popup-content">
+        <div class="popup-header">
+            <h3>Прилеп</h3>
+            <span class="popup-close-icon">&times;</span>
+        </div>
+        <div class="popup-body">
+            <p>Прилеп — град во Македонија, сместен во северниот дел на Пелагониската Котлина.</p>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- facts -->
+
+
+<!-- read more ends -->
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

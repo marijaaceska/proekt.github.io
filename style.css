@@ -1,0 +1,803 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root {
+    --brown:#966919;
+    --red:#722F37;
+    --wheat:#F5DEB3;
+
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background: var(--brown);
+    color: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+
+section{
+    padding: 1.5rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span{
+    font-size: 3rem;
+    background: var(--wheat);
+    color: var(--brown);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+}
+
+.heading span.space{
+    background: none;
+}
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--brown);
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--brown);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: rgba(255,165,0,.2);
+    color: var(--brown);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 15%;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*ne mora ova
+header .logo span {
+    color: var(--red);
+}
+*/
+header .navbar a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0.8rem;
+
+}
+/*so mausot se obojuva*/
+header .navbar a:hover {
+    color: var(--red);
+}
+/*
+header .icons i {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons i:hover {
+    color: var(--brown);
+}
+
+header .search-bar-container {
+    position: absolute;
+    top:100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    background: #333;
+    border-top: .1rem solid rgba(255,255,255,.2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+
+header .search-bar-container #search-bar {
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+
+header .search-bar-container label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+    color: var(--brown);
+}
+
+.login-form-container {
+    position: fixed;
+    top: -120%;
+    left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container.active{
+    top: 0;
+}
+
+.login-form-container form
+{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    width: 50rem;
+}
+
+.login-form-container form h3
+{
+    font-size: 3rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.login-form-container form .box
+{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: .6rem 0;
+    border: .1rem solid rgba(0,0,0,.3);
+    text-transform: none;
+}
+
+.login-form-container form .box:focus {
+    border-color: var(--brown);
+}
+
+.login-form-container form #remember
+{
+    margin: 2rem 0;
+}
+
+.login-form-container form label
+{
+    font-size: 1.5rem;
+}
+
+.login-form-container form .btn
+{
+    display: block;
+    width: 100%;
+}
+
+.login-form-container form  p{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.login-form-container form  p a{
+    color: var(--brown);
+}
+
+.login-form-container form  p a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+
+.login-form-container #form-close{
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+    color: #fff;
+    cursor: pointer;
+}
+*/
+#menu-bar{
+    color: #fff;
+    border: 0.2rem solid #fff;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/*body{
+    height: 300rem;
+}*/
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.home .content{
+    text-align: center;
+}
+
+.home .content .read-more{
+    display: none;
+}
+
+.popup-box{
+    position: fixed;
+    height: 100%; width: 100%;
+    left: 0; top: 25px;
+    background-color: rgba(0,0,0,.5);
+    z-index: 500;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.popup-box.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-box .popup-content{
+    background-color: #fff;
+    width: 600px;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+}
+
+.popup-box .popup-header{
+    padding: 15px 40px 15px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.popup-box .popup-header h3{
+    margin: 0;
+    color: var(--brown);
+    font-size: 16px;
+}
+
+.popup-box .popup-header .popup-close-icon{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    color: #555;
+    font-size: 28px;
+    line-height: 30px;
+    right: 5px; top: 5px;
+    cursor: pointer;
+
+}
+
+.popup-box .popup-body{
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.popup-box .popup-body img{
+    width: 100%;
+    gap: 1.5rem;
+    border-radius: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}
+.popup-box .popup-body p{
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 15px;
+}
+
+.popup-box .popup-footer{
+    padding: 15px;
+    border-top: 1px solid #dddddd;
+    text-align: right;
+}
+
+.popup-box .popup-footer .btn{
+    padding: 8px 15px;
+    border: 1px solid #555;
+    color: #555;
+    font-size: 16px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.popup-box .popup-footer button:focus{
+    outline: none;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 .5rem .5rem rgba(0,0,0,.1);
+}
+
+.home .content p{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+.home .video-container video{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .controls{
+    padding: 1rem;
+    border-radius: 3rem;
+    background: rgba(0,0,0,.7);
+    position: relative;
+    top: 10rem;
+}
+
+.home .controls .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+
+.home .controls .vid-btn.active{
+    background: var(--brown);
+}
+
+.gallery .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.gallery .box-container .box{
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border: 1rem solid #fff;
+    border-radius: .5rem;
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+}
+
+.gallery .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .box-container .box .content{
+    position: absolute;
+    top: -100%; left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,.7);
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+.gallery .box-container .box:hover .content{
+    top: 0;
+}
+
+.gallery .box-container .box .content h3{
+    font-size: 2rem;
+    color: var(--brown);
+}
+
+.gallery .box-container .box .content p{
+    font-size: 1.5rem;
+    color: #eee;
+    padding: .5rem 0;
+}
+
+.box-container .content .read-more{
+    display: none;
+}
+
+.events .boxContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.events .boxContainer .box{
+    flex: 1 1 30rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}
+
+.events .boxContainer .box i{
+    padding: .5rem;
+    font-size: 5rem;
+    color: var(--red);
+
+}
+
+.events .boxContainer .box h3{
+    font-size: 2rem;
+    color: var(--red);
+}
+
+.events .boxContainer .box p{
+    font-size: 1.2rem;
+    color: #666;
+    padding: .5rem 0;
+}
+
+.events .boxContainer .box button{
+    font-size: 1.5rem;
+    color: var(--red);
+}
+
+.grid-wrapper div img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.grid-wrapper > div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.grid-wrapper > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+/*
+.grid-wrapper .wide{
+    grid-column: span 2;
+}
+
+.grid-wrapper .tall{
+    grid-row: span 2;
+}
+
+.grid-wrapper .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+*/
+
+
+
+.hotel .box-cont{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.hotel .box-cont .box{
+    flex: 1 1 30rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+
+}
+
+.hotel .box-cont .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hotel .box-cont .box .content{
+    padding: 1.5rem;
+}
+
+.hotel .box-cont .box .content h3{
+    font-size: 2rem;
+    color: var(--red);
+}
+
+.hotel .box-cont .box .content h3 i{
+    color: var(--brown);
+}
+
+.hotel .box-cont .box .content p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+.hotel .box-cont .box .content .stars i{
+    font-size: 1.5rem;
+    color: var(--brown);
+}
+
+
+.box-cont .content .read-more{
+    display: none;
+}
+
+.boxContainer .box .read-more{
+    display: none;
+}
+
+.food .box{
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: 2rem;
+}
+
+.food .box i{
+    font-size: 1.5rem;
+}
+
+.food .box img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: .5rem;
+}
+
+.food .food-container{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 1.5rem;
+
+}
+
+.food .food-container .box h3{
+    font-size: 1.7rem;
+    color: var(--red);
+}
+
+.things .things-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+}
+
+.things .things-container .box{
+    position: relative;
+    border: .2rem solid var(--brown);
+    border-radius: .5rem;
+    height: 25rem;
+    cursor: pointer;
+    overflow: hidden;
+    display: none;
+}
+
+.things .things-container .box:nth-child(1),
+.things .things-container .box:nth-child(2),
+.things .things-container .box:nth-child(3){
+    display: inline-block;
+}
+
+.things .things-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.things .things-container .box:hover img{
+    transform: scale(1.1);
+    filter: grayscale();
+}
+
+.things .things-container .box .title{
+    position: absolute;
+    top: -10rem; left: 0; right: 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.things .things-container .box:hover .title{
+    top: 0;
+}
+
+.things .things-container .box .text{
+    position: absolute;
+    bottom: -10rem; left: 0; right: 0;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.things .things-container .box:hover .text{
+    bottom: 0;
+}
+
+.things .things-container .box .btn {
+    margin-right: 500px;
+}
+
+
+
+.things .things-container .box .load-more-btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--brown);
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--brown);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+/*
+#load-more{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #334;
+    color: #334;
+    font-size: 16px;
+    background-color: #fff;
+    text-align: center;
+}
+
+*/
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width: 991px) {
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #menu-bar{
+        display: initial;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #333;
+        border-top: .1rem solid rgba(255,255,255,.2);
+        padding: 1rem 2rem;
+        clip-path: polygon(0 0,100% 0, 100% 0, 0 0);
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        display: block;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin: 1rem 0;
+        background: #222;
+    }
+    .popup-box .popup-content{
+        width: calc(100% - 30px);
+    }
+    .popup-box .popup-body p{
+        font-size: 12px;
+    }
+    .food .food-container .box{
+        flex: 1 1 25rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html{
+        font-size: 50%;
+    }
+    .heading span{
+        font-size: 2.5rem;
+    }
+    .popup-box .popup-body p{
+        font-size: 11px;
+    }
+    .popup-box .popup-content{
+        width: 500px;
+    }
+    .events .boxContainer .box h3{
+        font-size: 1rem;
+    }
+    .events .boxContainer .box p{
+        font-size: .5rem;
+    }
+    .food .food-container .box{
+        flex: 1 1 25rem;
+    }
+    .things .things-container{
+        grid-template-columns: 1fr;
+    }
+}
